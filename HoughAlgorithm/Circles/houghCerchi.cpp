@@ -128,14 +128,6 @@ void HoughTransform( Mat output, Mat img, int threshold, int minRad, int maxRad)
     }
 
 
-    //////////////////////////////////////////////////// Segmentazione di un cerchio
-    //for(int i = 0; i < output.rows; i++)
-    //    for(int j = 0; j < output.cols; j++)
-    //        if(mask.at<Vec3b>(i,j) == Vec3b(0,0,0))
-    //            output.at<Vec3b>(i,j) = Vec3b(0, 0, 0);   // se l'immagine di output è in scala di grigio allora dovrà essere: output.at<uchar>(i,j) = uchar(0);
-    ////////////////////////////////////////////////////
-
-
     namedWindow("Hough Cerchi", WINDOW_NORMAL);
     imshow("Hough Cerchi", output);
 }
